@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap');
+
+:root {
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0e0e0f;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.2em;
+}
+@keyframes moveAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200%);
+  }
+}
+
+.loading {
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-in {
+  animation: moveAnimation 1s ease infinite;
+}
